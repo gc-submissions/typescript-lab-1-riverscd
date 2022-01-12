@@ -1,5 +1,5 @@
 
-interface Mountain {
+export interface Mountain {
     name: string,
     height: number
 }
@@ -13,7 +13,7 @@ const mountains: Mountain[] = [
     height: 20310}
 ]
 
-function findNameOfTallestMountain(mountains: Mountain[]): string{
+export function findNameOfTallestMountain(mountains: Mountain[]): string{
     if (mountains.length === 0){
         return ""
     }
